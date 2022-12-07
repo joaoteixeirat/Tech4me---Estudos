@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Endereço</title>
+</head>
+<body>
+    
+    <h1>Cadastro de Novo Endereço</h1>
+
+    <hr>
+
+    <form action="http://localhost:3000/cadastrar" method="get">
+
+
+        <div>
+            <label for="cep" style="display: block;">CEP:</label>
+            <input type="text" name="cep" id="cep" placeholder="_____-___" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="endereco" style="display: block;">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="numero" style="display: block;">Número:</label>
+            <input type="number" name="numero" id="numero" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="complemento" style="display: block;">Complemento:</label>
+            <input type="text" name="complemento" id="complemento" placeholder="(Opcional)">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="bairro" style="display: block;">Bairro:</label>
+            <input type="text" name="bairro" id="bairro"  required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="cidade" style="display: block;">Cidade:</label>
+            <input type="text" name="cidade" id="cidade"  required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="estado" style="display: block;">UF:</label>
+            <select name="estado" id="estado" required>
+                <option value="" data-default disabled selected></option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+        </div>
+        
+        <br>
+
+        <div>
+            <input type="checkbox" name="enderecoCobranca" id="enderecoCobranca">
+            <label for="enderecoCobranca">O endereço de entrega é o mesmo de cobrança?</label>
+        </div>
+
+        <br>
+
+        <button type="submit">Cadastrar Endereço</button>
+
+    </form>
+
+</body>
+</html>
