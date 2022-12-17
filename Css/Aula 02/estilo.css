@@ -1,0 +1,41 @@
+.vermelha{
+
+    background-color: red;
+}
+
+.laranja{
+
+    background-color: orange;
+}
+
+.amarela{
+
+    background-color: yellow;
+}
+
+.verde{
+
+    background-color: green;
+}
+
+
+.azul{
+
+    background-color: blue;
+}
+
+.azul-escuro{
+
+    background-color: darkblue;
+}
+
+.violeta{
+
+    background-color: violet;
+}
+
+.ponto::marker{
+
+    color: aquamarine;
+    
+}
