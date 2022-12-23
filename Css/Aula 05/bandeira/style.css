@@ -1,0 +1,35 @@
+.rect{
+
+    width: 200px;
+    height: 400px;
+    display: inline-block;
+    position: relative;
+}
+
+.blue{
+
+    background-color: blue;
+    animation: surgir 2s;
+}
+
+.yellow{
+
+    background-color: yellow;
+    animation: surgir 3s;
+}
+
+.red{
+
+    background-color: red;
+    animation: surgir 4s;
+}
+
+@keyframes surgir{
+
+    from{
+        top: -400px;
+    }
+    to{
+        top: 0px
+    }
+}

@@ -1,0 +1,67 @@
+body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+
+    width: 80vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+
+.square{
+
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: girar 2s infinite;
+}
+
+.ball{
+
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.um{
+
+    animation-delay: 1s;
+}
+.dois{
+
+    animation-delay: 1.2s;
+}
+.tres{
+
+    animation-delay: 1.4s;
+}
+.quatro{
+
+    animation-delay: 1.6s;
+}
+.cinco{
+
+    animation-delay: 1.8s;
+}
+.seis{
+
+    animation-delay: 2s;
+}
+
+
+@keyframes girar{
+
+    0%{
+
+        transform: rotate(360deg);
+    }
+}
