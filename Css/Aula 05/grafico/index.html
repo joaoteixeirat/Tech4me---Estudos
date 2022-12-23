@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico</title>
+
+    <style>
+
+        .container{
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border: 1px solid;
+            width: 500px;
+        }
+
+        .barra{
+
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            animation: grafico 1.5s linear;
+            border: 1px solid;
+        }
+
+        .barra > span{
+
+            font-weight: bold;
+        }
+
+        .strogonoff{
+
+            width: 320px;
+            background-color: aliceblue;
+        }
+        .lasanha{
+
+            width: 200px;
+            background-color: antiquewhite;
+        }
+        .churrasco{
+
+            width: 360px;
+            background-color: aqua;
+        }
+        .empadao{
+
+            width: 300px;
+            background-color: aquamarine;
+        }
+        .jilo{
+
+            width: 60px;
+            background-color: beige;
+        }
+
+        @keyframes grafico {
+            from{
+                width: 100px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="barra strogonoff">Strogonoff <span>16</span></div>
+        <div class="barra lasanha">Lasanha <span>10</span></div>
+        <div class="barra churrasco">Churrasco <span>18</span></div>
+        <div class="barra empadao">Empadão <span>15</span></div>
+        <div class="barra jilo">Jiló <span>3</span></div>
+    </div>
+</body>
+</html>
