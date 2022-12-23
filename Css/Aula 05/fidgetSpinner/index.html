@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidget Spinner</title>
+
+    <style>
+
+        body{
+
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rotate{
+
+            animation: girar 0.5s linear infinite;
+
+        }
+
+        @keyframes girar {
+            0% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="rotate">
+        <img src="./fidget.png" alt="Fidget Spinner" width="300" height="300">
+    </div>
+
+</body>
+</html>
