@@ -56,7 +56,7 @@ main{
 
     width: 30%;
     height: inherit;
-    background-image: url("./cupcake.png");
+    background-image: url("./Images/cupcake.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
