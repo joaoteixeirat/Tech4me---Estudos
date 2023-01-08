@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #cde6dc;
+}
+
+.nome-loja{
+
+    font-family: 'Rubik Bubbles', cursive;
+    font-weight: bold;
+    font-size: 72px;
+    text-shadow: 10px 10px 10px gray;
+    color: rgb(75, 75, 75);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.nome-loja::first-letter{
+
+    color: #3d7b80;
+}
+
+.vitrine-button{
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #77b1a9;
+    font-weight: bold;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    border-radius: 80px;
+    background-color: white;
+    box-shadow: 5px 5px 7px #77b1a9;
+    padding-left: 20px;
+    transition: transform 0.3s linear;
+}
+
+.vitrine-button:hover{
+    
+    transform: translateY(-5px);
+}
+
+.image-vitrine{
+
+    width: 30%;
+    height: inherit;
+    background-image: url("./cupcake.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
