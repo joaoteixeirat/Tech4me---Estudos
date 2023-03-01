@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital</title>
+    <style>
+
+        main{
+            
+            display: grid;
+            place-items: center;
+        }
+
+        #relogio{
+
+            font-family: monospace;
+            font-size: 96px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+
+        <h1>Hora Atual</h1>
+        <div id="relogio">00:00:00</div>
+
+    </main>
+
+    <script>
+
+        const relogio = document.getElementById("relogio");
+
+        const atualizaHora = function(){
+
+            const data = new Date();
+
+            const horaAtual = data.toLocaleTimeString();
+
+            relogio.innerText = horaAtual;
+        }
+
+        //setInterval(atualizaHora,1000);
+
+    </script>
+
+</body>
+</html>
