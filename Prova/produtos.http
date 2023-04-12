@@ -1,0 +1,21 @@
+POST https://641cf247b556e431a878fb78.mockapi.io/produto
+Content-Type: application/json
+
+{
+    "aluno": "Joao Victor",
+    "imagem": "https://receitatodahora.com.br/wp-content/uploads/2022/03/bolo-de-morango-com-chantilly-scaled.jpg",
+    "titulo": "Morango com Chantilly",
+    "descricao": "Este bolo é uma deliciosa combinação de camadas de pão de ló fofo intercaladas com chantilly leve e cremoso, e morangos frescos e suculentos. O topo do bolo é decorado com mais chantilly e morangos, resultando em uma sobremesa visualmente bonita e irresistivelmente deliciosa"
+}
+
+###
+
+POST https://641cf247b556e431a878fb78.mockapi.io/produto
+Content-Type: application/json
+
+{
+    "aluno": "Joao Victor",
+    "imagem": "https://vovopalmirinha.com.br/wp-content/uploads/2017/05/bolo-doce-de-leite.jpg",
+    "titulo": "Doce de Leite com Amendoim",
+    "descricao": "Este bolo é uma mistura perfeita de sabores e texturas! Com massa fofinha de baunilha, recheio cremoso de doce de leite e cobertura crocante de amendoim torrado, cada mordida é uma experiência única e deliciosa."
+}

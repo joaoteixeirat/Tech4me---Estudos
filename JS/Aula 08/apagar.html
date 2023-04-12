@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Carros:</h1>
+        <ul id="lista"></ul>
+    </div>
+
+    <script>
+
+        const listaCarros = document.getElementById("lista");
+
+        const url = "https://3979-2804-56c-d7b6-9300-b5c6-5dd4-c7f5-b12f.ngrok.io/carros";
+
+        function consultar(){
+
+            fetch(url)
+            .then(res => res.json())
+            .then((lista) => {
+
+                lista.forEach((item) => {
+
+                    const li = document.createElement("li");
+
+                    li.innerHTML = `${item.id} <button onclick= 'apagar(${item.id})'> Apagar </button>`
+
+                    listaCarros.appendChild(li);
+                })
+            })
+        }
+
+        function apagar(itemId){
+
+            const config = {
+
+                method: "DELETE"
+            }
+
+            fetch(url+'/'+itemId,config).then((res) => {
+            
+                console.log(res);
+
+                listaCarros.innerHTML = '';
+
+                consultar();
+            })
+        }
+
+        consultar();
+
+    </script>
+</body>
+</html>

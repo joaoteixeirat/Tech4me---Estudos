@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital</title>
+    <style>
+
+        main{
+            
+            display: grid;
+            place-items: center;
+        }
+
+        #relogio{
+
+            font-family: monospace;
+            font-size: 96px;
+        }
+
+        .botoes{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #btn-iniciar, #btn-reset{
+
+            width: 100px;
+            height: 100px;
+            display: grid;
+            place-items: center;
+            border: 1px solid;
+            border-radius: 50%;
+            color: green;
+            cursor: pointer;
+        }
+
+        #btn-reset{
+
+            width: 70px;
+            height: 70px;
+            color: rgb(62, 62, 62);
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+
+        <h1>Cronômetro</h1>
+        <div id="relogio">00:00:00</div>
+
+        <div class="botoes">
+
+            <div id="btn-iniciar">Iniciar</div>
+            <div id="btn-reset">Reset</div>
+
+        </div>
+
+    </main>
+
+    <script>
+
+        const relogio = document.getElementById("relogio");
+
+        const botao = document.getElementById("btn-iniciar");
+
+        var ini;
+
+        botao.onclick = () => {
+
+            ini = new Date();
+
+            setInterval(incrementa,1000)
+        }
+
+        function incrementa(){
+
+            const diff = new Date() - ini;
+
+            relogio.innerText = new Date(diff).toLocaleTimeString();
+        }
+
+        //setInterval(atualizaHora,1000);
+
+    </script>
+
+</body>
+</html>

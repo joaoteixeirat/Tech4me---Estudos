@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Montadora: <input type="text" id="montadora"> <br>
+        Modelo: <input type="text" id="modelo"> <br>
+        <button onclick="cadastrar()">Cadastrar</button>
+        <br>
+        <p id="texto"></p>
+    </div>
+
+    <script>
+
+        const texto = document.querySelector("#texto");
+
+        const url = "https://3979-2804-56c-d7b6-9300-b5c6-5dd4-c7f5-b12f.ngrok.io/carros";
+        const config = {
+
+            method: "POST",
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body: {}
+        }
+
+        const cpMontadora = document.querySelector("#montadora");
+        const cpModelo = document.querySelector("#modelo");
+
+        function cadastrar() {
+
+            const montadora = cpMontadora.value;
+            const modelo = cpModelo.value;
+
+            const novo = {
+                aluno: "João",
+                montadora,
+                modelo
+            }
+
+            config.body = JSON.stringify(novo);
+
+            fetch(url,config)
+            .then((res) => res.json())
+            .then((res) => texto.innerHTML = JSON.stringify(res));
+        }
+
+    </script>
+</body>
+</html>
