@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        body{
+
+            display: grid;
+            place-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        header{
+            display: flex;
+            width: 100vw;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button{
+
+            width: 150px;
+            height: 20px;
+            background-color: rgb(145, 136, 136);
+            padding: 20px;
+            display: grid;
+            place-items: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        span{
+
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        main{
+
+            border: 1px solid black;
+            width: 90%;
+            height: 80vh;
+            margin: 10px;
+            display: grid;
+            place-items: center;
+        }
+
+    </style>
+    <title>SPAs</title>
+</head>
+<body>
+
+    <header>
+        <div class="button sobre">
+            <span>Sobre</span>
+        </div>
+        <div class="button contato">
+            <span>Contato</span>
+        </div>
+    </header>
+
+    <main id="main">
+
+    
+
+    </main>
+
+    <script src="sobre.js"></script>
+    <script src="contato.js"></script>
+</body>
+</html>
