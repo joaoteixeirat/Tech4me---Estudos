@@ -1,0 +1,8 @@
+POST https://b571-189-113-68-7.ngrok-free.app/filmes
+Content-Type: application/json
+
+{
+    "pessoa": "Joao Victor",
+    "titulo": "Trem-Bala",
+    "genero": "Ação/Comédia"
+}
